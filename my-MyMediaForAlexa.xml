@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MyMediaForAlexa</Name>
+  <Repository>bizmodeller/mymediaforalexa</Repository>
+  <Registry>https://hub.docker.com/r/bizmodeller/mymediaforalexa/~/dockerfile/</Registry>
+  <Network>br0</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://www.mymediaalexa.com/</Support>
+  <Project/>
+  <Overview>&amp;lt;b&amp;gt;What is My Media For Alexa?&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+A media server that allows you to stream audio files (e.g. music and audiobooks) that are sored oh your unRAID server to Alexa enabled devices using voice control.&amp;lt;br/&amp;gt;&#xD;
+More detail on the features can be found on the &amp;lt;a href="http://mymediaalexa.com"&amp;gt;My Media for Alexa web site&amp;lt;/a&amp;gt;.&#xD;
+&amp;lt;p&amp;gt;&#xD;
+&amp;lt;b&amp;gt;Licensing&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+My Media for Alexa can be used for free for seven days to allow you to evaluate it.  After that you need a (very modestly priced) license to continue using it.  Details of the prices for licenses can be found  on the &amp;lt;a href="http://mymediaalexa.com"&amp;gt;My Media for Alexa web site&amp;lt;/a&amp;gt;.  If you want to run multiple instances of My Media for Alexa then you will require a license for each instance.&amp;lt;p&amp;gt;The license is activated when you use the My Media for Alexa admin screen to connect to your Amazon account.&amp;lt;p&amp;gt;&#xD;
+&amp;lt;b&amp;gt;Networking&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+My Media for Alexa uses port 52050 to communicate with Alexa and port 52051 to run the Admin GUI.   These ports must &amp;lt;b&amp;gt;not&amp;lt;/b&amp;gt; be changed.&amp;lt;br/&amp;gt;If you want to run multiple instances of My Media for Alexa (perhaps to handle different media types) then change the network type from &amp;lt;I&amp;gt;bridged&amp;lt;/I&amp;gt; to &amp;lt;I&amp;gt;Custom: br0&amp;lt;/I&amp;gt; as each instance must have its own IP address. More detail on the networking requirements can be found on the &amp;lt;a href="http://mymediaalexa.com"&amp;gt;My Media for Alexa web site&amp;lt;/a&amp;gt;.&amp;lt;p&amp;gt;&#xD;
+&amp;lt;paths&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+The My Media for Alexa docker container has two paths pre-configured paths:&amp;lt;br/&amp;gt;&#xD;
+&amp;lt;I&amp;gt;&amp;lt;b&amp;gt;/datadir&amp;lt;/b&amp;gt;&amp;lt;/I&amp;gt;  This  should be mapped to where My Media For Alexa will store its configuration information and indexing information.&amp;lt;br/&amp;gt;&#xD;
+&amp;lt;I&amp;gt;&amp;lt;b&amp;gt;/medialibrary&amp;lt;/b&amp;gt;&amp;lt;/I&amp;gt;  This should be mapped to where your media is stored on your unRAID server. &#xD;
+Additional paths for media can be added if your media is stored at several locations, but you will then also need to add these paths  inside the container via the My Media for Alexa admin screens.&amp;lt;p&amp;gt;&#xD;
+&amp;lt;b&amp;gt;Note&amp;lt;/b&amp;gt;:  Do not forget that you also have to have activated the My Media skill via the Alexa app on your phone or tablet before you can start using My Media for Alexa to start playing your media.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:52051]</WebUI>
+  <TemplateURL/>
+  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1530703289</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>&amp;lt;b&amp;gt;What is My Media For Alexa?&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+A media server that allows you to stream audio files (e.g. music and audiobooks) that are sored oh your unRAID server to Alexa enabled devices using voice control.&amp;lt;br/&amp;gt;&#xD;
+More detail on the features can be found on the &amp;lt;a href="http://mymediaalexa.com"&amp;gt;My Media for Alexa web site&amp;lt;/a&amp;gt;.&#xD;
+&amp;lt;p&amp;gt;&#xD;
+&amp;lt;b&amp;gt;Licensing&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+My Media for Alexa can be used for free for seven days to allow you to evaluate it.  After that you need a (very modestly priced) license to continue using it.  Details of the prices for licenses can be found  on the &amp;lt;a href="http://mymediaalexa.com"&amp;gt;My Media for Alexa web site&amp;lt;/a&amp;gt;.  If you want to run multiple instances of My Media for Alexa then you will require a license for each instance.&amp;lt;p&amp;gt;The license is activated when you use the My Media for Alexa admin screen to connect to your Amazon account.&amp;lt;p&amp;gt;&#xD;
+&amp;lt;b&amp;gt;Networking&amp;lt;/b&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+My Media for Alexa uses port 52050 to communicate with Alexa and port 52051 to run the Admin GUI.   These ports must &amp;lt;b&amp;gt;not&amp;lt;/b&amp;gt; be changed.&amp;lt;br/&amp;gt;If you want to run multiple instances of My Media for Alexa (perhaps to handle different media types) then change the network type from &amp;lt;I&amp;gt;bridged&amp;lt;/I&amp;gt; to &amp;lt;I&amp;gt;Custom: br0&amp;lt;/I&amp;gt; as each instance must have its own IP address. More detail on the networking requirements can be found on the &amp;lt;a href="http://mymediaalexa.com"&amp;gt;My Media for Alexa web site&amp;lt;/a&amp;gt;.&amp;lt;p&amp;gt;&#xD;
+&amp;lt;paths&amp;gt;&amp;lt;br/&amp;gt;&#xD;
+The My Media for Alexa docker container has two paths pre-configured paths:&amp;lt;br/&amp;gt;&#xD;
+&amp;lt;I&amp;gt;&amp;lt;b&amp;gt;/datadir&amp;lt;/b&amp;gt;&amp;lt;/I&amp;gt;  This  should be mapped to where My Media For Alexa will store its configuration information and indexing information.&amp;lt;br/&amp;gt;&#xD;
+&amp;lt;I&amp;gt;&amp;lt;b&amp;gt;/medialibrary&amp;lt;/b&amp;gt;&amp;lt;/I&amp;gt;  This should be mapped to where your media is stored on your unRAID server. &#xD;
+Additional paths for media can be added if your media is stored at several locations, but you will then also need to add these paths  inside the container via the My Media for Alexa admin screens.&amp;lt;p&amp;gt;&#xD;
+&amp;lt;b&amp;gt;Note&amp;lt;/b&amp;gt;:  Do not forget that you also have to have activated the My Media skill via the Alexa app on your phone or tablet before you can start using My Media for Alexa to start playing your media.</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish>
+      <Port>
+        <HostPort>52051</HostPort>
+        <ContainerPort>52051</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>52050</HostPort>
+        <ContainerPort>52050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/MyMediaForAlexa-BOOKS/</HostDir>
+      <ContainerDir>/datadir</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/AUDIOBOOKS/</HostDir>
+      <ContainerDir>/medialibrary</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Data  folder" Target="/datadir" Default="" Mode="rw" Description="Config and database folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/MyMediaForAlexa-BOOKS/</Config>
+  <Config Name="Media folder" Target="/medialibrary" Default="" Mode="ro" Description="Media folder" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Admin port" Target="52051" Default="52051" Mode="tcp" Description="Admin port for Web GUI" Type="Port" Display="always" Required="true" Mask="false">52051</Config>
+  <Config Name="Alexa port" Target="52050" Default="52050" Mode="tcp" Description="Port for connection to Alexa" Type="Port" Display="always" Required="true" Mask="false">52050</Config>
+</Container>
