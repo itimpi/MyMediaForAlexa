@@ -6,7 +6,7 @@
   <Network>host</Network>
   <MyIP/>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/bizmodeller/mymediaforalexa/</Support>
+  <Support>https://lime-technology.com/forums/topic/72781-mymediaforalexa-docker/</Support>
   <Project/>
   <Overview>A media server that allows you to stream audio files (e.g. music and audiobooks) that are stored on your unRAID server to Alexa enabled devices such as Amazon Echo or Amazon Dot using voice control.[p]&#xD;
 More details and the full list of features can be found on the My Media For Alexa [a href=http://mymediaalexa.com]web site[/a].  [p]&#xD;
