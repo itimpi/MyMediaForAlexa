@@ -23,8 +23,8 @@ To administer the My Media For Alexa server use the WebUI.</Overview>
   <DonateText/>
   <DonateLink/>
   <Description>A media server that allows you to stream audio files (e.g. music and audiobooks) that are stored on your unRAID server to Alexa enabled devices such as Amazon Echo or Amazon Dot using voice control.[p]&#xD;
-More details and the full list of features can be found on the My Media For Alexa [a href=http://mymediaalexa.com]web site[/a].  [p]&#xD;
-Additional detail on setting up My Media For Alexa on unRAID can be found [a href=https://github.com/itimpi/MyMediaForAlexa]here[/a][p]&#xD;
+More details and the full list of features can be found on the My Media For Alexa [a href=http://mymediaalexa.com]web site[/a].[p]
+Additional detail on setting up My Media For Alexa on unRAID can be found [a href=https://github.com/itimpi/MyMediaForAlexa]here[/a][p]
 To administer the My Media For Alexa server use the WebUI.</Description>
   <Networking>
     <Mode>host</Mode>
@@ -48,7 +48,7 @@ To administer the My Media For Alexa server use the WebUI.</Description>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/?</HostDir>
+      <HostDir>/mnt/user/path-to-audio</HostDir>
       <ContainerDir>/medialibrary</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
